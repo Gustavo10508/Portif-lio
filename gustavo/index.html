@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gustavo Prates | Portfólio</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS para animações -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Fundo partículas -->
+  <div id="particles-js"></div>
+
+  <!-- Cursor personalizado -->
+  <div class="cursor"></div>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h2 class="logo">Gustavo.dev</h2>
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="section hero">
+    <div class="section-content" data-aos="fade-up">
+      <h1>Olá, eu sou <span id="typing"></span></h1>
+      <p>Desenvolvedor em formação apaixonado por tecnologia e inovação.</p>
+      <a href="#contato" class="btn">Fale comigo</a>
+    </div>
+
+    <!-- FOTO 3D PARALLAX -->
+    <div class="hero-img" id="hero-img">
+      <img src="assets/foto.jpg" alt="Foto do Gustavo" class="foto">
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section" data-aos="fade-up">
+    <div class="section-content">
+      <h2>Sobre Mim</h2>
+      <p>
+        Sou estudante de Desenvolvimento de Sistemas, apaixonado por tecnologia, resolução de problemas
+        e criação de soluções que impactam pessoas. Busco evolução constante e desafios que me façam crescer.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="section" data-aos="fade-up">
+    <div class="section-content">
+      <h2>Projetos</h2>
+      <div class="cards">
+        <div class="card" data-aos="fade-right">
+          <h3>SAGA SENAI</h3>
+          <p>Projeto desenvolvido no SENAI com foco em organização e eficiência.</p>
+          <a href="https://github.com/Gustavo10508" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="card" data-aos="fade-left">
+          <h3>World Guessing Game</h3>
+          <p>Jogo de adivinhação de países com sistema de ranking.</p>
+          <a href="https://github.com/Gustavo10508/world_guessing_game" target="_blank">Ver Projeto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section" data-aos="fade-up">
+    <div class="section-content">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Hard Skills</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Comunicação</li>
+            <li>Trabalho em equipe</li>
+            <li>Proatividade</li>
+            <li>Determinação</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section" data-aos="fade-up">
+    <div class="section-content">
+      <h2>Contato</h2>
+      <div class="social-icons">
+        <a href="https://github.com/Gustavo10508" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <a href="mailto:gustavopratesguga@gmail.com?subject=Oportunidade&body=Olá! Vi seu portfólio e gostaria de conversar com você."
+         class="btn">Contate-me</a>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true });
+
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        size: { value: 3 },
+        color: { value: "#38bdf8" },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#38bdf8",
+          opacity: 0.4
+        },
+        move: { enable: true, speed: 2 }
+      }
+    });
+  </script>
+</body>
+</html>
